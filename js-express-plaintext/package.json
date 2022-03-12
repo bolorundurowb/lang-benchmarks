@@ -8,5 +8,8 @@
   "private": false,
   "dependencies": {
     "express": "^4.17.3"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
 }
