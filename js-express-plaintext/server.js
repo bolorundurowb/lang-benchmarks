@@ -1,13 +1,12 @@
-
 const express = require('express');
 
 const app = express();
 const port = 7654;
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+    res.send('Hello world!')
 });
 
 app.listen(port, () => {
-  console.log(`Listening on port ${port}`)
+    console.log(`Listening on port ${port}`);
 });

@@ -1,0 +1,12 @@
+{
+  "name": "js-fastify-plaintext",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": "https://github.com/bolorundurowb/web-benchmarks",
+  "author": "@bolorundurowb",
+  "license": "GPLv3",
+  "private": false,
+  "dependencies": {
+    "fastify": "^3.27.4"
+  }
+}
