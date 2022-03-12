@@ -8,5 +8,8 @@
   "private": false,
   "dependencies": {
     "fastify": "^3.27.4"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
 }
