@@ -1,6 +1,8 @@
 const int port = 7654;
-var builder = WebApplication.CreateBuilder(args)
-    .UseUrls($"http://localhost:{port}");
+var builder = WebApplication.CreateBuilder(args);
+builder.Logging.ClearProviders();
 var app = builder.Build();
+
 app.MapGet("/", () => "Hello world!");
-app.Run();
+Console.WriteLine($"Listening on port {port}");
+app.Run($"http://localhost:{port}");
