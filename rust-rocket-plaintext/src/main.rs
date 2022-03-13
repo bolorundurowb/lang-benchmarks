@@ -1,13 +1,16 @@
-#[macro_use] extern crate rocket;
+#[macro_use]
+extern crate rocket;
 
 #[get("/")]
-fn hello() ->  &'static str {
+fn hello() -> &'static str {
     return "Hello world!";
 }
 
 #[rocket::main]
 async fn main() {
-    rocket::build()
+    let figment = rocket::Config::figment().merge(("port", 7654));
+
+    rocket::custom(figment)
         .mount("/", routes![hello])
         .launch()
         .await;
