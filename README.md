@@ -87,7 +87,7 @@ No of samples: 59
 
 4215k requests in 60.4s, 691 MB read
 
-<br/ >
+<br />
 
 ## Rust
 
