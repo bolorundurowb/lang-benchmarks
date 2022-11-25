@@ -7,7 +7,7 @@
   "license": "GPLv3",
   "private": false,
   "dependencies": {
-    "fastify": "^3.27.4"
+    "fastify": "^3.29.4"
   },
   "scripts": {
     "start": "node server.js"
